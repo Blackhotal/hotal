@@ -36,11 +36,14 @@ public class UserServiceImpl implements UserService {
     @Value("${redis.user.expire}")
     private Integer userExpire;
 
-    @Value("${LoginUser.user.password}")
-    private Integer userPassoword;
+    @Value("${loginUser.user.password.length.min}")
+    private Integer USER_PASSWORD_LENGTH_MIN;
 
-    @Value("${LoginUser.user.phone}")
-    private Integer userPhone;
+    @Value("${loginUser.user.password.length.max}")
+    private Integer USER_PASSWORD_LENGTH_MAX;
+
+    @Value("${loginUser.user.phone.length}")
+    private Integer USER_PHONE_LENGTH;
 
 
     @Override
@@ -65,47 +68,34 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public int addUser(User user) {
-
-        User findUser = userDao.findByName(user.getName());
-
-        int flag = 0;
-        flag = userDao.addUser(user);
-
-        // 1.判断用户名
-        if (findUser.getName() == user.getName()) {
-            flag = 0;
-            throw new HotalBusinessException("用户名已存在");
+        // 1.判断用户密码长度
+        if (user.getPassword().length() < USER_PASSWORD_LENGTH_MIN || user.getPassword().length() > USER_PASSWORD_LENGTH_MAX) {
+            throw new HotalBusinessException("密码长度必须为6-12位");
         }
 
-        // 2.判断用户密码长度
-        if (user.getPassword().length() < userPassoword) {
-            flag = 0;
-            throw new HotalBusinessException("密码必须大于等于6位数");
+        // 2.判断用户的手机号长度
+        if (user.getPhone().length() != USER_PHONE_LENGTH) {
+            throw new HotalBusinessException("手机号码长度必须为11位");
         }
 
-        // 3.判断用户的手机号长度
-        if (user.getPhone().length() < userPhone) {
-            flag = 0;
-            throw new HotalBusinessException("手机号码长度必须大于等于6位数");
-        }
-        // 3.1使用正则表达式验证手机号码格式是否正确
-        if (Reg.regexPhone(user.getPhone())) {
-            flag = 0;
+        // 3使用正则表达式验证手机号码格式是否正确
+        if (!Reg.regexPhone(user.getPhone())) {
             throw new HotalBusinessException("手机号码格式不正确");
         }
 
-        // 4.判断用户的邮箱是否为空
-        if (user.getEmail().length() != 0 && "".equals(user.getEmail()) && user.getEmail() != null) {
-            flag = 0;
-            throw new HotalBusinessException("邮箱不能为空");
-        }
-        // 4.1使用正则表达式验证用户的邮箱是否正确
-        if (Reg.regexPhone(user.getPhone())) {
-            flag = 0;
+        // 4.使用正则表达式验证用户的邮箱是否正确
+        if (!Reg.regexPhone(user.getPhone())) {
             throw new HotalBusinessException("邮箱格式不正确");
         }
 
-        return flag;
+        // 5.查询用户名是否存在
+        User findUser = userDao.findByName(user.getName());
+        if (findUser != null) {
+            throw new HotalBusinessException("用户名已存在");
+        }
+
+        // 6.添加用户
+        return userDao.addUser(user);
     }
 
 

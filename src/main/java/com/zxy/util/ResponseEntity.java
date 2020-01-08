@@ -15,6 +15,7 @@ public class ResponseEntity<T> {
     private String msg;
     private T data;
 
+
     public ResponseEntity(T data) {
         this.data = data;
     }

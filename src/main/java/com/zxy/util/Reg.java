@@ -19,13 +19,16 @@ public class Reg {
      */
     private static final String REGULAR_EMAIL = "^[A-Za-z0-9\\u4e00-\\u9fa5]+@[a-zA-Z0-9_-]+(\\.[a-zA-Z0-9_-]+)+$";
 
+    public static final Pattern regexPhone = Pattern.compile(REGULAR_PHONE);
+
+
+
     /**
      * 手机验证
      * @param Phone
      * @return isMatched
      */
     public static Boolean regexPhone(String Phone) {
-        Pattern regexPhone = Pattern.compile(REGULAR_PHONE);
         Matcher matcher = regexPhone.matcher(Phone);
         boolean isMatched = matcher.matches();
         return isMatched;

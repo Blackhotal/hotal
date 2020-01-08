@@ -1,0 +1,18 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hotal
+    username: root
+    password: ok
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+
+mybatis:
+  mapper-locations: mapper/*.xml
+
+redis:
+  user:
+    expire: 7200
