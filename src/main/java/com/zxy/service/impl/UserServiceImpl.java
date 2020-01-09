@@ -1,7 +1,6 @@
 package com.zxy.service.impl;
 
 import com.alibaba.fastjson.JSON;
-import com.zxy.constant.RedisConst;
 import com.zxy.dao.UserDao;
 import com.zxy.entity.User;
 import com.zxy.exception.HotalBusinessException;
@@ -17,7 +16,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.Objects;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
-import java.util.regex.Pattern;
 
 /**
  * UserServiceImpl

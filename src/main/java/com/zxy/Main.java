@@ -1,4 +1,4 @@
-package com.zxy;
+//package com.zxy;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -7,15 +7,15 @@ import java.util.Date;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.regex.Pattern;
 
-public class Main {
+//public class Main {
 
 
 
-    public static AtomicLong count = new AtomicLong(10);
+//    public static AtomicLong count = new AtomicLong(10);
 
-    public static final DateFormat FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-
-    public static void main(String[] args) throws ParseException {
+//    public static final DateFormat FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//
+//    public static void main(String[] args) throws ParseException {
         // 1.基本类型和基本类型
 //        int a = 10;
 //        int b = 10;
@@ -53,31 +53,31 @@ public class Main {
         // Integer -> int  自动拆箱 .intValue
 
 
-        Integer a = -129;
-        Integer b = -129;
-        System.out.println(a == b);
+//        Integer a = -129;
+//        Integer b = -129;
+//        System.out.println(a == b);
 
         // [-128, 127]   -2^8  ~  2^8-1
 
 
-        Integer a2 = Integer.valueOf(-129);
+//        Integer a2 = Integer.valueOf(-129);
 
-        System.out.println(Integer.MAX_VALUE);
-        System.out.println(Integer.MIN_VALUE);
+//        System.out.println(Integer.MAX_VALUE);
+//        System.out.println(Integer.MIN_VALUE);
 
-        Integer[] cache = new Integer[256];
-        int num = -128;
-        for (int i = 0; i < 256 ; i++) {
-            cache[i] = num;
-            num++;
-        }
+ //       Integer[] cache = new Integer[256];
+ //       int num = -128;
+ //       for (int i = 0; i < 256 ; i++) {
+ //           cache[i] = num;
+//            num++;
+        //}
 
         // -128 127 直接拿到对象的物理地址  ==
         // 如果不在范围内，直接 new
 
 
         // 八大基本数据类型
-        /**
+       /**
          * 带宽 100Mb
          * 下载 12.5MB
          *
@@ -97,8 +97,8 @@ public class Main {
          */
 
 
-        String str = "abc";
-        char c = 'c';
+  //      String str = "abc";
+  //      char c = 'c';
 
         // 32 位： 4个字节
         // 块
@@ -106,15 +106,15 @@ public class Main {
       // Integer.value(10)  优于 new Integer(10)
 
 
-        DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+   //     DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
-        Date date = format.parse("2019-10-10 12:12:12");
-        Date date2 = FORMAT.parse("2019-10-10 12:12:12");
-
-
+    //    Date date = format.parse("2019-10-10 12:12:12");
+   //     Date date2 = FORMAT.parse("2019-10-10 12:12:12");
 
 
-    }
 
 
-}
+  //  }
+
+
+//}

@@ -1,10 +1,8 @@
 package com.zxy.conrtoller;
 
 import com.alibaba.fastjson.JSON;
-import com.zxy.constant.RedisConst;
 import com.zxy.entity.User;
 import com.zxy.service.UserService;
-import com.zxy.util.Md5;
 import com.zxy.util.ResponseEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -67,7 +65,6 @@ public class UserController {
         } else {
             return ResponseEntity.error(500, "用户注册失败");
         }
-
     }
 }
 
