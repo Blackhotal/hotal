@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d14ab0a7-6501-48c8-bc0c-0a745821ec99" name="Default Changelist" comment="">
+    <list default="true" id="d14ab0a7-6501-48c8-bc0c-0a745821ec99" name="Default Changelist" comment="新增">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zxy/conrtoller/DishController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zxy/dao/DishDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zxy/entity/Dish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zxy/service/DishService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zxy/service/impl/DishServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/DishMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zxy/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zxy/conrtoller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zxy/conrtoller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxy/constant/RedisConst.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxy/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zxy/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zxy/conrtoller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zxy/conrtoller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zxy/constant/RedisConst.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zxy/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zxy/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zxy/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zxy/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxy/HotalApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxy/conrtoller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxy/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxy/entity/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxy/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxy/exception/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxy/exception/HotalBusinessException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxy/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxy/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxy/util/Md5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxy/util/Reg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zxy/util/ResponseEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxy/HotalApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zxy/dao/UserDaoTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +77,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Interface" />
         <option value="MyBatisMapper" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -66,6 +87,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\Project\hotal\.idea" />
+      </set>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -77,7 +105,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1Vmajfj0t6g229XPTnVzeGJv7MM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -92,11 +122,12 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -106,7 +137,10 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.29885057" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -227,6 +261,11 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
             </expand>
             <select />
           </treeState>
@@ -256,7 +295,15 @@
       <workItem from="1578478530699" duration="199000" />
       <workItem from="1578478756798" duration="12448000" />
       <workItem from="1578548067166" duration="975000" />
-      <workItem from="1578561358034" duration="272000" />
+      <workItem from="1578561358034" duration="924000" />
+      <workItem from="1578985921150" duration="631000" />
+      <workItem from="1579428922428" duration="949000" />
+      <workItem from="1579440071447" duration="608000" />
+      <workItem from="1580035560479" duration="21000" />
+      <workItem from="1580035622112" duration="62000" />
+      <workItem from="1580035702640" duration="726000" />
+      <workItem from="1580650039912" duration="142000" />
+      <workItem from="1580650395628" duration="3215000" />
     </task>
     <task id="LOCAL-00002" summary="修复一些小问题">
       <created>1578055568814</created>
@@ -293,7 +340,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578387245869</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="新增">
+      <created>1578561657488</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1578561657488</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,10 +437,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="691" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578060697001" />
-    <state x="765" y="230" width="534" height="567" key="#com.intellij.ide.util.MemberChooser" timestamp="1578491702992">
+    <state x="765" y="230" width="534" height="567" key="#com.intellij.ide.util.MemberChooser" timestamp="1580652380710">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="230" width="534" height="567" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1578491702992" />
+    <state x="765" y="230" width="534" height="567" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580652380710" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578062063427">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -395,10 +449,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="222" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1578487890287" />
-    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1578478196943">
+    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1580035732224">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1578478196943" />
+    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580035732224" />
     <state width="409" height="466" key="DebuggerActiveHint" timestamp="1578486861246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -411,38 +465,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1578483061143" />
-    <state width="1293" height="442" key="GridCell.Tab.0.bottom" timestamp="1578550353620">
+    <state width="1293" height="442" key="GridCell.Tab.0.bottom" timestamp="1580653703635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="442" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578550353620" />
-    <state width="1293" height="442" key="GridCell.Tab.0.center" timestamp="1578550353620">
+    <state width="1293" height="442" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580653703635" />
+    <state width="1293" height="442" key="GridCell.Tab.0.center" timestamp="1580653703635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="442" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578550353620" />
-    <state width="1293" height="442" key="GridCell.Tab.0.left" timestamp="1578550353619">
+    <state width="1293" height="442" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580653703635" />
+    <state width="1293" height="442" key="GridCell.Tab.0.left" timestamp="1580653703634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="442" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578550353619" />
-    <state width="1293" height="442" key="GridCell.Tab.0.right" timestamp="1578550353620">
+    <state width="1293" height="442" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580653703634" />
+    <state width="1293" height="442" key="GridCell.Tab.0.right" timestamp="1580653703635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="442" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578550353620" />
-    <state width="1293" height="442" key="GridCell.Tab.1.bottom" timestamp="1578550353620">
+    <state width="1293" height="442" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580653703635" />
+    <state width="1293" height="442" key="GridCell.Tab.1.bottom" timestamp="1580653703635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="442" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1578550353620" />
-    <state width="1293" height="442" key="GridCell.Tab.1.center" timestamp="1578550353620">
+    <state width="1293" height="442" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580653703635" />
+    <state width="1293" height="442" key="GridCell.Tab.1.center" timestamp="1580653703635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="442" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1578550353620" />
-    <state width="1293" height="442" key="GridCell.Tab.1.left" timestamp="1578550353620">
+    <state width="1293" height="442" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580653703635" />
+    <state width="1293" height="442" key="GridCell.Tab.1.left" timestamp="1580653703635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="442" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1578550353620" />
-    <state width="1293" height="442" key="GridCell.Tab.1.right" timestamp="1578550353620">
+    <state width="1293" height="442" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580653703635" />
+    <state width="1293" height="442" key="GridCell.Tab.1.right" timestamp="1580653703635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="442" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1578550353620" />
+    <state width="1293" height="442" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580653703635" />
     <state width="1293" height="442" key="GridCell.Tab.2.bottom" timestamp="1578496406778">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -463,18 +517,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577861471629" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1578487316207">
+    <state x="461" y="162" key="SettingsEditor" timestamp="1580035683832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1578487316207" />
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580035683832" />
     <state x="859" y="436" key="SimpleOpenTaskDialog" timestamp="1577861444191">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="859" y="436" key="SimpleOpenTaskDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577861444191" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1578478203021">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1578561659988">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578478203021" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578561659988" />
     <state x="669" y="160" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1578483508977">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -483,14 +537,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578482025009" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1578056887919">
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1580035831980">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1578056887919" />
-    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578561630079">
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580035831980" />
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580653700116">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1578561630079" />
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1580653700116" />
     <state x="731" y="238" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1578057814600">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -499,6 +553,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="511" y="256" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1578483809327" />
+    <state x="334" y="222" key="new project wizard" timestamp="1579429276091">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="222" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1579429276091" />
     <state x="601" y="246" width="700" height="530" key="recent.locations.popup" timestamp="1578057318535">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

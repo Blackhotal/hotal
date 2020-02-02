@@ -12,6 +12,7 @@ import java.util.List;
 
 /**
  * 统一异常处理
+ * @author black
  */
 @ControllerAdvice
 @ResponseBody
@@ -20,11 +21,6 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = Exception.class)
     public ResponseEntity<String> exceptionHandler(HttpServletRequest request, Exception e) {
         e.printStackTrace();
-        if(e instanceof HotalBusinessException) {
-            // xxx
-            return ResponseEntity.error(500, e.getMessage());
-        }
-
         return ResponseEntity.error(500, e.getMessage());
     }
 }
